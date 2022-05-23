@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Common.Cache;
 using System.Runtime.InteropServices;
+using Cuestionario;
 
 namespace Presentation
 {
@@ -119,6 +120,7 @@ namespace Presentation
         private void btnCuestionarios_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColors.color2);
+            OpenChildForm(new Form1());
         }
 
         private void btnConfig_Click(object sender, EventArgs e)
