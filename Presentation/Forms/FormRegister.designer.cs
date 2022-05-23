@@ -32,12 +32,10 @@ namespace Presentation
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -75,7 +73,6 @@ namespace Presentation
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape5,
             this.lineShape4,
             this.lineShape3,
             this.lineShape2,
@@ -83,16 +80,6 @@ namespace Presentation
             this.shapeContainer1.Size = new System.Drawing.Size(800, 500);
             this.shapeContainer1.TabIndex = 2;
             this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape5
-            // 
-            this.lineShape5.BorderColor = System.Drawing.Color.Gainsboro;
-            this.lineShape5.Enabled = false;
-            this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 501;
-            this.lineShape5.X2 = 701;
-            this.lineShape5.Y1 = 247;
-            this.lineShape5.Y2 = 247;
             // 
             // lineShape4
             // 
@@ -132,20 +119,6 @@ namespace Presentation
             this.lineShape1.X2 = 700;
             this.lineShape1.Y1 = 115;
             this.lineShape1.Y2 = 115;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtEmail.Location = new System.Drawing.Point(501, 225);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(200, 19);
-            this.txtEmail.TabIndex = 2;
-            this.txtEmail.Text = "Contraseña";
-            this.txtEmail.Enter += new System.EventHandler(this.txtPass_Enter);
-            this.txtEmail.Leave += new System.EventHandler(this.txtPass_Leave);
             // 
             // textBox3
             // 
@@ -305,7 +278,6 @@ namespace Presentation
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -329,7 +301,6 @@ namespace Presentation
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnLogin;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
@@ -342,7 +313,6 @@ namespace Presentation
         private System.Windows.Forms.PictureBox pictureBox1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.TextBox txtUsuario;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
         private System.Windows.Forms.TextBox txtPass;
     }
 }
