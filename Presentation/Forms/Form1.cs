@@ -36,7 +36,7 @@ namespace Cuestionario
         {
             if (RBcorrecto.Checked == true)
             {
-                puntaje = puntaje + 500;
+                puntaje = puntaje + 1000;
                 Puntaje.Text = puntaje.ToString();
                 correctas = correctas + 1;
                 LbCorrectas.Text = correctas.ToString();
