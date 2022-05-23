@@ -47,6 +47,8 @@ namespace Presentation
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
@@ -73,6 +75,7 @@ namespace Presentation
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape5,
             this.lineShape4,
             this.lineShape3,
             this.lineShape2,
@@ -261,6 +264,30 @@ namespace Presentation
             this.txtPass.TabIndex = 14;
             this.txtPass.Text = "Correo";
             // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtEmail.Location = new System.Drawing.Point(501, 225);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(200, 19);
+            this.txtEmail.TabIndex = 2;
+            this.txtEmail.Text = "Contraseña";
+            this.txtEmail.Enter += new System.EventHandler(this.txtPass_Enter);
+            this.txtEmail.Leave += new System.EventHandler(this.txtPass_Leave);
+            // 
+            // lineShape5
+            // 
+            this.lineShape5.BorderColor = System.Drawing.Color.Gainsboro;
+            this.lineShape5.Enabled = false;
+            this.lineShape5.Name = "lineShape5";
+            this.lineShape5.X1 = 501;
+            this.lineShape5.X2 = 701;
+            this.lineShape5.Y1 = 247;
+            this.lineShape5.Y2 = 247;
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +305,7 @@ namespace Presentation
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -314,5 +342,7 @@ namespace Presentation
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtPass;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }
