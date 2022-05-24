@@ -61,6 +61,12 @@
     <Compile Include="Forms\Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCuestionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCuestionarios.Designer.cs">
+      <DependentUpon>FormCuestionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCuestionarios.resx">
+      <DependentUpon>FormCuestionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>

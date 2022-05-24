@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cuestionario;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSplashScreen());
+            Application.Run(new FormPrincipal());
         }
     }
 }
