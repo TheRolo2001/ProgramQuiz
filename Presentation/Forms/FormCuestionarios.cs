@@ -24,33 +24,12 @@ namespace Presentation.Forms
 
         }
 
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
-            else
-            {
-                currentChildForm = childForm;
-            }
-
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(childForm);
-            panelContainer.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-            lblTitleChildForm.Text = childForm.Text;
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 Cuestionario = new Form1();
             Cuestionario.Show();
-
         }
     }
 }
