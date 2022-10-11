@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Common.Cache;
+using System.Windows.Forms;
 
 namespace DataAccess
 {
@@ -42,6 +43,32 @@ namespace DataAccess
                 }
             }
             
+        }
+
+        public bool Register(string name, string user, string pass)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO Usuarios (Nombre, Usuario, Pass) VALUES (@Nombre, @Usuario, @Pass)";
+                    command.Parameters.AddWithValue("@Nombre", name);
+                    command.Parameters.AddWithValue("@Usuario", user);
+                    command.Parameters.AddWithValue("@Pass", pass);
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (SqlException ex) 
+                    { 
+                        MessageBox.Show("No se pudo ejecutar " + ex.ToString());
+                        return false; 
+                    }   
+                }
+            }
         }
     }
 }

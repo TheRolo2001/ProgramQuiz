@@ -16,5 +16,10 @@ namespace Domain
         {
             return userDao.Login(user, pass);
         }
+
+        public bool RegisterUser(string name, string user, string pass)
+        {
+            return userDao.Register(name, user, pass);
+        }
     }
 }

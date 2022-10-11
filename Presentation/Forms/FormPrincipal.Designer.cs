@@ -33,7 +33,6 @@ namespace Presentation
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
-            this.btnConfig = new FontAwesome.Sharp.IconButton();
             this.btnCuestionarios = new FontAwesome.Sharp.IconButton();
             this.btnUsuario = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -66,7 +65,6 @@ namespace Presentation
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.btnCerrarSesion);
-            this.panelMenu.Controls.Add(this.btnConfig);
             this.panelMenu.Controls.Add(this.btnCuestionarios);
             this.panelMenu.Controls.Add(this.btnUsuario);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -85,19 +83,6 @@ namespace Presentation
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
-            // btnConfig
-            // 
-            resources.ApplyResources(this.btnConfig, "btnConfig");
-            this.btnConfig.FlatAppearance.BorderSize = 0;
-            this.btnConfig.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnConfig.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            this.btnConfig.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnConfig.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfig.IconSize = 32;
-            this.btnConfig.Name = "btnConfig";
-            this.btnConfig.UseVisualStyleBackColor = true;
-            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
             // btnCuestionarios
             // 
@@ -265,7 +250,6 @@ namespace Presentation
 
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton btnCerrarSesion;
-        private FontAwesome.Sharp.IconButton btnConfig;
         private FontAwesome.Sharp.IconButton btnCuestionarios;
         private FontAwesome.Sharp.IconButton btnUsuario;
         private System.Windows.Forms.Panel panelLogo;

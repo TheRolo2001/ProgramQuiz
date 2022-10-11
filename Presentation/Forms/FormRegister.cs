@@ -20,71 +20,117 @@ namespace Presentation
             InitializeComponent();
         }
         //Metodos para validar campos de texto
-        private void txtUser_Enter(object sender, EventArgs e)
+        private void txtNombre_Enter(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "Usuario")
+            if (txtNombre.Text == "Nombre")
             {
                 txtNombre.Text = "";
                 txtNombre.ForeColor = Color.Gainsboro;
             }
         }
 
-        private void txtUser_Leave(object sender, EventArgs e)
+        private void txtNombre_Leave(object sender, EventArgs e)
         {
             if (txtNombre.Text == "")
             {
-                txtNombre.Text = "Usuario";
+                txtNombre.Text = "Nombre";
                 txtNombre.ForeColor = Color.DimGray;
+            }
+        }
+        private void txtUser_Enter(object sender, EventArgs e)
+        {
+            if (txtUser.Text == "Usuario")
+            {
+                txtUser.Text = "";
+                txtUser.ForeColor = Color.Gainsboro;
+            }
+        }
+
+        private void txtUser_Leave(object sender, EventArgs e)
+        {
+            if (txtUser.Text == "")
+            {
+                txtUser.Text = "Usuario";
+                txtUser.ForeColor = Color.DimGray;
             }
         }
 
         private void txtPass_Enter(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "Contraseña")
+            if (txtPass.Text == "Contraseña")
             {
-                txtEmail.Text = "";
-                txtEmail.ForeColor = Color.Gainsboro;
-                txtEmail.UseSystemPasswordChar = true;
+                txtPass.Text = "";
+                txtPass.ForeColor = Color.Gainsboro;
+                txtPass.UseSystemPasswordChar = true;
             }
         }
 
         private void txtPass_Leave(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "")
+            if (txtPass.Text == "")
             {
-                txtEmail.Text = "Contraseña";
-                txtEmail.ForeColor = Color.DimGray;
-                txtEmail.UseSystemPasswordChar = false;
+                txtPass.Text = "Contraseña";
+                txtPass.ForeColor = Color.DimGray;
+                txtPass.UseSystemPasswordChar = false;
             }
         }
-
-        //Validacion de inicio de sesion
+        //Realizar Registro
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "Nombre")
+            {
+                if (txtUser.Text != "Usuario")
+                {
+                    if (txtPass.Text != "Contraseña")
+                    {
+                        UserModel user = new UserModel();
+                        var validRegister = user.RegisterUser(txtNombre.Text, txtUser.Text, txtPass.Text);
+                        if (validRegister)
+                        {
+                            MessageBox.Show("¡Usuario registrado correctamente!");
+                            LimpiarDatos();
+                        }
+                        else
+                        {
+                            msgError("Datos No validos.");
+                            LimpiarDatos();
+                        }
+                    }
+                    else msgError(" Por favor ingrese una contraseña");
+                }
+                else msgError("Por favor ingrese un nombre de usuario");
+            }
+            else msgError("Por favor ingrese un nombre");
+        }
+        //Inicio de Sesion
         private void btnLogin_Click(object sender, EventArgs e)
         {
             FormLogin formLogin = new FormLogin();
             this.Close();
             formLogin.Show();
-        } 
-        //Botones de Ventana
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
-
+        //Botones de Ventana
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        //Colores
-        private struct RGBColors
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+            Application.Exit();
+        }
+        private void msgError(string msg)
+        {
+            lblErrorMessage.Text = "  " + msg;
+            lblErrorMessage.Visible = true;
+        }
+        private void LimpiarDatos() 
+        {
+            txtNombre.ForeColor = Color.DimGray;
+            txtNombre.Text = "Nombre";
+            txtUser.ForeColor = Color.DimGray;
+            txtUser.Text = "Usuario";
+            txtPass.ForeColor = Color.DimGray;
+            txtPass.Text = "Contraseña";
         }
     }
 }

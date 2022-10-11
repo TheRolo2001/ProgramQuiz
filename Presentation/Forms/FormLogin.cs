@@ -25,7 +25,7 @@ namespace Presentation
             if (txtUser.Text == "Usuario")
             {
                 txtUser.Text = "";
-                txtUser.ForeColor = Color.Gainsboro;
+                txtUser.ForeColor = Color.LightGray;
             }
         }
 
@@ -43,7 +43,7 @@ namespace Presentation
             if (txtPass.Text == "Contraseña")
             {
                 txtPass.Text = "";
-                txtPass.ForeColor = Color.Gainsboro;
+                txtPass.ForeColor = Color.LightGray;
                 txtPass.UseSystemPasswordChar = true;
             }
         }
@@ -78,9 +78,11 @@ namespace Presentation
                     else
                     {
                         msgError("Usuario o contraseña invalidos");
+                        txtUser.ForeColor = Color.DimGray;
+                        txtPass.ForeColor = Color.DimGray;
+                        txtUser.Text = "Usuario";
                         txtPass.Text = "Contraseña";
                         txtPass.UseSystemPasswordChar = false;
-                        txtUser.Focus();
                     }
                 }
                 else msgError("Por favor ingrese una contraseña");
