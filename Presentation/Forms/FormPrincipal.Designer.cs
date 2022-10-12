@@ -45,10 +45,10 @@ namespace Presentation
             this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHora = new System.Windows.Forms.Label();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.lblMensajes = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
@@ -58,7 +58,6 @@ namespace Presentation
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
             this.panelContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -118,8 +117,8 @@ namespace Presentation
             // 
             // btnInicio
             // 
-            this.btnInicio.Image = global::Presentation.Properties.Resources.Logo;
             resources.ApplyResources(this.btnInicio, "btnInicio");
+            this.btnInicio.Image = global::Presentation.Properties.Resources.Logo;
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.TabStop = false;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
@@ -179,8 +178,8 @@ namespace Presentation
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelContainer.Controls.Add(this.lblMensajes);
             this.panelContainer.Controls.Add(this.lblFecha);
-            this.panelContainer.Controls.Add(this.pictureBox1);
             this.panelContainer.Controls.Add(this.lblHora);
             resources.ApplyResources(this.panelContainer, "panelContainer");
             this.panelContainer.Name = "panelContainer";
@@ -190,13 +189,6 @@ namespace Presentation
             resources.ApplyResources(this.lblFecha, "lblFecha");
             this.lblFecha.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblFecha.Name = "lblFecha";
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::Presentation.Properties.Resources.Logo;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // lblHora
             // 
@@ -214,6 +206,12 @@ namespace Presentation
             // 
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
+            // 
+            // lblMensajes
+            // 
+            resources.ApplyResources(this.lblMensajes, "lblMensajes");
+            this.lblMensajes.BackColor = System.Drawing.Color.White;
+            this.lblMensajes.Name = "lblMensajes";
             // 
             // FormPrincipal
             // 
@@ -241,7 +239,6 @@ namespace Presentation
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -261,10 +258,10 @@ namespace Presentation
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.Panel panelShadow;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnMaximize;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.Label lblMensajes;
     }
 }

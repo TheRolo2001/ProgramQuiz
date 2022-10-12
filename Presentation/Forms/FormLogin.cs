@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 using Common.Cache;
-
+using Presentation.Forms;
 
 namespace Presentation
 {
@@ -69,11 +69,12 @@ namespace Presentation
                     var validLogin = user.LoginUser(txtUser.Text, txtPass.Text);
                     if (validLogin)
                     {
+                        this.Hide();
+                        FormWelcome welcome = new FormWelcome();
+                        welcome.ShowDialog();
                         FormPrincipal mainMenu = new FormPrincipal();
-                        MessageBox.Show($"¡Hola {UserLoginCache.Nombre} es un placer verte de nuevo!");
                         mainMenu.Show();
                         mainMenu.FormClosed += Logout;
-                        this.Hide();
                     }
                     else
                     {
