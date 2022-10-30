@@ -35,6 +35,7 @@ namespace Presentation
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.BtnEditar = new System.Windows.Forms.Button();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(iconPictureBox3)).BeginInit();
@@ -105,12 +106,23 @@ namespace Presentation
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Location = new System.Drawing.Point(161, 27);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(75, 36);
+            this.BtnEditar.TabIndex = 6;
+            this.BtnEditar.Text = "Editar Usuario";
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
+            // 
             // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(580, 425);
+            this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(iconPictureBox3);
             this.Controls.Add(iconPictureBox2);
@@ -135,5 +147,6 @@ namespace Presentation
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblCargo;
+        private System.Windows.Forms.Button BtnEditar;
     }
 }

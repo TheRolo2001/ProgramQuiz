@@ -10,8 +10,9 @@ namespace Common.Cache
     {
         public static int Id_Usuario { get; set; }
         public static string Nombre { get; set; }
-        public static string Email { get; set; }
         public static string Cargo { get; set; }
+        public static string Usuario { get; set; }
+        public static string Contraseña { get; set; }
 
     }
 }

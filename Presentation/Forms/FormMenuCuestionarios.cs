@@ -1,5 +1,4 @@
-﻿using Cuestionario;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
+using Cuestionario;
+using Presentation.Forms;
 
 namespace Presentation.Forms
 {
-    public partial class FormCuestionarios : Form
+    public partial class FormMenuCuestionarios : Form
     {
         private Form currentChildForm;
-        public FormCuestionarios()
+        public FormMenuCuestionarios()
         {
             InitializeComponent();
         }
@@ -24,12 +26,25 @@ namespace Presentation.Forms
 
         }
 
-        
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 Cuestionario = new Form1();
-            Cuestionario.Show();
+            Form form = new FormCuestionario();
+            form.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

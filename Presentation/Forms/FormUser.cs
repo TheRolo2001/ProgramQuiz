@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.Cache;
+using Presentation.Forms;
 
 namespace Presentation
 {
@@ -21,8 +22,14 @@ namespace Presentation
         private void LoadUserData()
         {
             lblNombre.Text = UserLoginCache.Nombre;
-            lblEmail.Text = UserLoginCache.Email;
+            lblEmail.Text = UserLoginCache.Usuario;
             lblCargo.Text = UserLoginCache.Cargo;
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            Form form = new FormEditUsuario();
+            form.Show();
         }
     }
 }

@@ -12,7 +12,26 @@ namespace DataAccess
 {
     public class UserDao:ConnectionToSQL
     {
-        public bool Login(string user, string pass) 
+        public void EditarPefil(int id, string nombre, string usuario, string contraseña)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "update Usuarios set" +
+                        "Nombre=@Nombre, Usuario=@Usuario, Pass=@Pass where Id_Usuario=@Id_Usuario";
+                    command.Parameters.AddWithValue("@Id_Usuario", id);
+                    command.Parameters.AddWithValue("@Nombre", nombre);
+                    command.Parameters.AddWithValue("@Usuario", usuario);
+                    command.Parameters.AddWithValue("@Pass", contraseña);
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        public bool Login(string user, string pass)
         {
             using (var connection = GetConnection())
             {
@@ -31,8 +50,9 @@ namespace DataAccess
                         {
                             UserLoginCache.Id_Usuario = reader.GetInt32(0);
                             UserLoginCache.Nombre = reader.GetString(1);
-                            UserLoginCache.Email = reader.GetString(2);
-                            UserLoginCache.Cargo = reader.GetString(3);
+                            UserLoginCache.Cargo = reader.GetString(2);
+                            UserLoginCache.Usuario = reader.GetString(3);
+                            UserLoginCache.Contraseña = reader.GetString(4);
                         }
                         return true;
                     }
@@ -42,7 +62,7 @@ namespace DataAccess
                     }
                 }
             }
-            
+
         }
 
         public bool Register(string name, string user, string pass)

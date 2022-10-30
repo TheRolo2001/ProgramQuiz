@@ -90,17 +90,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\FormCuestionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\FormCuestionario.designer.cs">
+      <DependentUpon>FormCuestionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormCuestionarios.cs">
+    <Compile Include="Forms\FormEditUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormCuestionarios.Designer.cs">
-      <DependentUpon>FormCuestionarios.cs</DependentUpon>
+    <Compile Include="Forms\FormEditUsuario.designer.cs">
+      <DependentUpon>FormEditUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMenuCuestionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMenuCuestionarios.designer.cs">
+      <DependentUpon>FormMenuCuestionarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormRegister.cs">
       <SubType>Form</SubType>
@@ -140,11 +146,14 @@
     <Compile Include="Forms\FormSplashScreen.designer.cs">
       <DependentUpon>FormSplashScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormCuestionario.resx">
+      <DependentUpon>FormCuestionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormCuestionarios.resx">
-      <DependentUpon>FormCuestionarios.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormEditUsuario.resx">
+      <DependentUpon>FormEditUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMenuCuestionarios.resx">
+      <DependentUpon>FormMenuCuestionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
