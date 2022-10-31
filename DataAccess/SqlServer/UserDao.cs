@@ -20,8 +20,7 @@ namespace DataAccess
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update Usuarios set" +
-                        "Nombre=@Nombre, Usuario=@Usuario, Pass=@Pass where Id_Usuario=@Id_Usuario";
+                    command.CommandText = "update Usuarios set Nombre=@Nombre, Usuario=@Usuario, Pass=@Pass where Id_Usuario=@Id_Usuario";
                     command.Parameters.AddWithValue("@Id_Usuario", id);
                     command.Parameters.AddWithValue("@Nombre", nombre);
                     command.Parameters.AddWithValue("@Usuario", usuario);

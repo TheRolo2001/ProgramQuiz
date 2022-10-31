@@ -37,12 +37,12 @@ namespace Domain
             try
             {
                 userDao.EditarPefil(id, nombre, usuario, contraseña);
-                LoginUser(usuario, nombre);
-                return "perfil actualisado correctamente";
+                LoginUser(usuario, contraseña);
+                return "Perfil actualizado correctamente";
             }
             catch (Exception ex)
             {
-                return "error";
+                return "Error";
             }
         }
         public bool LoginUser(string user, string pass)

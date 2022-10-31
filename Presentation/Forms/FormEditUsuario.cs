@@ -40,11 +40,12 @@ namespace Presentation.Forms
         }
         private void editarcontroles()
         {
-            linkLabel1.Text = "Editar";
             txtContraseña.Enabled = false;
             txtContraseña.UseSystemPasswordChar = true;
             txtConfContraseña.Enabled = false;
             txtConfContraseña.UseSystemPasswordChar = true;
+            txtActual.Enabled = false;
+            txtActual.UseSystemPasswordChar = true;
         }
 
         private void reset()
@@ -59,16 +60,31 @@ namespace Presentation.Forms
             {
                 if (txtActual.Text == UserLoginCache.Contraseña)
                 {
-                    var userModel = new UserModel(id:UserLoginCache.Id_Usuario, nombre:txtNombre.Text, usuario:txtUsuario.Text, contraseña:txtContraseña.Text);
+                    var userModel = new UserModel(id: UserLoginCache.Id_Usuario, nombre: txtNombre.Text, usuario: txtUsuario.Text, contraseña: txtContraseña.Text);
                     var resultado = userModel.editarusuario();
                     MessageBox.Show(resultado);
+                    reset();
                 }
+                else
+                    MessageBox.Show("Error en la confirmacion");
             }
+            else
+                MessageBox.Show("Las contraseñas no coninciden");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            txtContraseña.Enabled = true;
+            txtContraseña.Text = "";
+            txtConfContraseña.Enabled = true;
+            txtConfContraseña.Text = "";
+            txtActual.Enabled = true;
+            txtActual.Text = "";
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
