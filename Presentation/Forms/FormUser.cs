@@ -28,8 +28,19 @@ namespace Presentation
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            Form form = new FormEditUsuario();
-            form.Show();
+            OpenChildForm(new FormEditUsuario());
         }
+        private void OpenChildForm(Form childForm)
+        {
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            ChildForm2.Controls.Add(childForm);
+            ChildForm2.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        private Form currentChildForm;
     }
 }

@@ -45,7 +45,7 @@ namespace Presentation
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(345, 316);
+            this.panel1.Location = new System.Drawing.Point(350, 287);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(187, 28);
             this.panel1.TabIndex = 0;
@@ -103,7 +103,7 @@ namespace Presentation
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Tan;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(260, 20);
+            this.label4.Location = new System.Drawing.Point(265, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(344, 46);
             this.label4.TabIndex = 4;

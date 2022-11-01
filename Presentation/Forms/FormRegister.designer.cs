@@ -158,7 +158,7 @@ namespace Presentation
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnRegister.Location = new System.Drawing.Point(550, 376);
+            this.btnRegister.Location = new System.Drawing.Point(551, 376);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(109, 30);
             this.btnRegister.TabIndex = 0;
@@ -194,7 +194,7 @@ namespace Presentation
             this.lblErrorMessage.ForeColor = System.Drawing.Color.DarkRed;
             this.lblErrorMessage.Image = global::Presentation.Properties.Resources.war;
             this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblErrorMessage.Location = new System.Drawing.Point(497, 329);
+            this.lblErrorMessage.Location = new System.Drawing.Point(498, 230);
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblErrorMessage.Size = new System.Drawing.Size(75, 13);

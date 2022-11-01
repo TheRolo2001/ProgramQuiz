@@ -18,12 +18,6 @@ namespace Presentation.Forms
         {
             InitializeComponent();
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormEditUsuario_Load(object sender, EventArgs e)
         {
             Edicion();
