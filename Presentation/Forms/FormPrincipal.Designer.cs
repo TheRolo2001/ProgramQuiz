@@ -32,32 +32,37 @@ namespace Presentation
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
-            this.btnCuestionarios = new FontAwesome.Sharp.IconButton();
-            this.btnUsuario = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnInicio = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.imgInfo = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMaximize = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.IconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.horaFecha = new System.Windows.Forms.Timer(this.components);
-            this.lblMensajes = new System.Windows.Forms.Label();
+            this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
+            this.btnCuestionarios = new FontAwesome.Sharp.IconButton();
+            this.btnUsuario = new FontAwesome.Sharp.IconButton();
+            this.btnInicio = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
             this.panelTitleBar.SuspendLayout();
+            this.panelContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).BeginInit();
-            this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -69,6 +74,116 @@ namespace Presentation
             this.panelMenu.Controls.Add(this.panelLogo);
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.btnInicio);
+            resources.ApplyResources(this.panelLogo, "panelLogo");
+            this.panelLogo.Name = "panelLogo";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.btnMaximize);
+            this.panelTitleBar.Controls.Add(this.btnMinimize);
+            this.panelTitleBar.Controls.Add(this.btnClose);
+            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.panelTitleBar.Controls.Add(this.IconCurrentChildForm);
+            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // lblTitleChildForm
+            // 
+            resources.ApplyResources(this.lblTitleChildForm, "lblTitleChildForm");
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            resources.ApplyResources(this.panelShadow, "panelShadow");
+            this.panelShadow.Name = "panelShadow";
+            // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
+            // 
+            // lblHora
+            // 
+            resources.ApplyResources(this.lblHora, "lblHora");
+            this.lblHora.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblHora.Name = "lblHora";
+            // 
+            // lblFecha
+            // 
+            resources.ApplyResources(this.lblFecha, "lblFecha");
+            this.lblFecha.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblFecha.Name = "lblFecha";
+            // 
+            // panelContainer
+            // 
+            resources.ApplyResources(this.panelContainer, "panelContainer");
+            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelContainer.Controls.Add(this.imgInfo);
+            this.panelContainer.Controls.Add(this.pictureBox1);
+            this.panelContainer.Name = "panelContainer";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panel1.Controls.Add(this.lblFecha);
+            this.panel1.Controls.Add(this.lblHora);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // imgInfo
+            // 
+            resources.ApplyResources(this.imgInfo, "imgInfo");
+            this.imgInfo.Image = global::Presentation.Properties.Resources._2;
+            this.imgInfo.Name = "imgInfo";
+            this.imgInfo.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnMaximize
+            // 
+            resources.ApplyResources(this.btnMaximize, "btnMaximize");
+            this.btnMaximize.Image = global::Presentation.Properties.Resources.botonMaximizar;
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.TabStop = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnMinimize
+            // 
+            resources.ApplyResources(this.btnMinimize, "btnMinimize");
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnClose
+            // 
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.Image = global::Presentation.Properties.Resources.boton_x;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // IconCurrentChildForm
+            // 
+            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.IconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
+            this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.IconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
+            this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            resources.ApplyResources(this.IconCurrentChildForm, "IconCurrentChildForm");
+            this.IconCurrentChildForm.Name = "IconCurrentChildForm";
+            this.IconCurrentChildForm.TabStop = false;
             // 
             // btnCerrarSesion
             // 
@@ -109,12 +224,6 @@ namespace Presentation
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.btnInicio);
-            resources.ApplyResources(this.panelLogo, "panelLogo");
-            this.panelLogo.Name = "panelLogo";
-            // 
             // btnInicio
             // 
             resources.ApplyResources(this.btnInicio, "btnInicio");
@@ -123,123 +232,38 @@ namespace Presentation
             this.btnInicio.TabStop = false;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panelTitleBar.Controls.Add(this.btnMaximize);
-            this.panelTitleBar.Controls.Add(this.btnMinimize);
-            this.panelTitleBar.Controls.Add(this.btnClose);
-            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
-            this.panelTitleBar.Controls.Add(this.IconCurrentChildForm);
-            resources.ApplyResources(this.panelTitleBar, "panelTitleBar");
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // btnMaximize
-            // 
-            resources.ApplyResources(this.btnMaximize, "btnMaximize");
-            this.btnMaximize.Image = global::Presentation.Properties.Resources.botonMaximizar;
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.TabStop = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnMinimize
-            // 
-            resources.ApplyResources(this.btnMinimize, "btnMinimize");
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnClose
-            // 
-            resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.Image = global::Presentation.Properties.Resources.boton_x;
-            this.btnClose.Name = "btnClose";
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // lblTitleChildForm
-            // 
-            resources.ApplyResources(this.lblTitleChildForm, "lblTitleChildForm");
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            // 
-            // IconCurrentChildForm
-            // 
-            this.IconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.IconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
-            this.IconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.IconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
-            this.IconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            resources.ApplyResources(this.IconCurrentChildForm, "IconCurrentChildForm");
-            this.IconCurrentChildForm.Name = "IconCurrentChildForm";
-            this.IconCurrentChildForm.TabStop = false;
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelContainer.Controls.Add(this.lblMensajes);
-            this.panelContainer.Controls.Add(this.lblFecha);
-            this.panelContainer.Controls.Add(this.lblHora);
-            resources.ApplyResources(this.panelContainer, "panelContainer");
-            this.panelContainer.Name = "panelContainer";
-            // 
-            // lblFecha
-            // 
-            resources.ApplyResources(this.lblFecha, "lblFecha");
-            this.lblFecha.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblFecha.Name = "lblFecha";
-            // 
-            // lblHora
-            // 
-            resources.ApplyResources(this.lblHora, "lblHora");
-            this.lblHora.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblHora.Name = "lblHora";
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            resources.ApplyResources(this.panelShadow, "panelShadow");
-            this.panelShadow.Name = "panelShadow";
-            // 
-            // horaFecha
-            // 
-            this.horaFecha.Enabled = true;
-            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
-            // 
-            // lblMensajes
-            // 
-            resources.ApplyResources(this.lblMensajes, "lblMensajes");
-            this.lblMensajes.BackColor = System.Drawing.Color.White;
-            this.lblMensajes.Name = "lblMensajes";
-            // 
             // FormPrincipal
             // 
             this.AllowDrop = true;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelContainer);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPrincipal";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            this.panelContainer.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconCurrentChildForm)).EndInit();
-            this.panelContainer.ResumeLayout(false);
-            this.panelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -254,14 +278,16 @@ namespace Presentation
         private System.Windows.Forms.Panel panelTitleBar;
         private FontAwesome.Sharp.IconPictureBox IconCurrentChildForm;
         private System.Windows.Forms.Label lblTitleChildForm;
-        private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.PictureBox btnMaximize;
-        private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horaFecha;
-        private System.Windows.Forms.Label lblMensajes;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgInfo;
     }
 }

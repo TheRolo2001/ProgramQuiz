@@ -206,9 +206,10 @@ namespace Presentation
             this.lblErrorMessage.AutoSize = true;
             this.lblErrorMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lblErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorMessage.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblErrorMessage.Location = new System.Drawing.Point(497, 239);
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblErrorMessage.Image = global::Presentation.Properties.Resources.war;
+            this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblErrorMessage.Location = new System.Drawing.Point(500, 240);
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblErrorMessage.Size = new System.Drawing.Size(75, 13);
@@ -219,6 +220,7 @@ namespace Presentation
             // 
             // btnMinimize
             // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
             this.btnMinimize.Location = new System.Drawing.Point(761, 5);
             this.btnMinimize.Name = "btnMinimize";
@@ -230,6 +232,7 @@ namespace Presentation
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = global::Presentation.Properties.Resources.boton_x;
             this.btnClose.Location = new System.Drawing.Point(782, 5);
             this.btnClose.Name = "btnClose";
@@ -258,6 +261,7 @@ namespace Presentation
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogin";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

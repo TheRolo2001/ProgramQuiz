@@ -15,7 +15,6 @@ namespace Presentation.Forms
 {
     public partial class FormMenuCuestionarios : Form
     {
-        private Form currentChildForm;
         public FormMenuCuestionarios()
         {
             InitializeComponent();

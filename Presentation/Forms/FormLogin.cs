@@ -92,7 +92,7 @@ namespace Presentation
         }
         private void msgError(string msg)
         {
-            lblErrorMessage.Text = "  " + msg;
+            lblErrorMessage.Text = "     " + msg;
             lblErrorMessage.Visible = true;
         }
         

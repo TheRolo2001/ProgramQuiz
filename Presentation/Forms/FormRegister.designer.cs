@@ -191,8 +191,9 @@ namespace Presentation
             this.lblErrorMessage.AutoSize = true;
             this.lblErrorMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lblErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorMessage.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblErrorMessage.Image = global::Presentation.Properties.Resources.war;
+            this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblErrorMessage.Location = new System.Drawing.Point(497, 329);
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;

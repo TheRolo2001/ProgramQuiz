@@ -12,24 +12,6 @@ namespace DataAccess
 {
     public class UserDao:ConnectionToSQL
     {
-        public void EditarPefil(int id, string nombre, string usuario, string contraseña)
-        {
-            using (var connection = GetConnection())
-            {
-                connection.Open();
-                using (var command = new SqlCommand())
-                {
-                    command.Connection = connection;
-                    command.CommandText = "update Usuarios set Nombre=@Nombre, Usuario=@Usuario, Pass=@Pass where Id_Usuario=@Id_Usuario";
-                    command.Parameters.AddWithValue("@Id_Usuario", id);
-                    command.Parameters.AddWithValue("@Nombre", nombre);
-                    command.Parameters.AddWithValue("@Usuario", usuario);
-                    command.Parameters.AddWithValue("@Pass", contraseña);
-                    command.CommandType = CommandType.Text;
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
         public bool Login(string user, string pass)
         {
             using (var connection = GetConnection())
@@ -63,7 +45,6 @@ namespace DataAccess
             }
 
         }
-
         public bool Register(string name, string user, string pass)
         {
             using (var connection = GetConnection())
@@ -86,6 +67,24 @@ namespace DataAccess
                         MessageBox.Show("No se pudo ejecutar " + ex.ToString());
                         return false; 
                     }   
+                }
+            }
+        }
+        public void EditarPefil(int id, string nombre, string usuario, string contraseña)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "update Usuarios set Nombre=@Nombre, Usuario=@Usuario, Pass=@Pass where Id_Usuario=@Id_Usuario";
+                    command.Parameters.AddWithValue("@Id_Usuario", id);
+                    command.Parameters.AddWithValue("@Nombre", nombre);
+                    command.Parameters.AddWithValue("@Usuario", usuario);
+                    command.Parameters.AddWithValue("@Pass", contraseña);
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
                 }
             }
         }
