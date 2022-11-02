@@ -100,7 +100,6 @@ namespace Presentation
             {
                     currentChildForm = childForm;
             }
-
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
