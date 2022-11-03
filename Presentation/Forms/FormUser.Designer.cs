@@ -30,7 +30,6 @@ namespace Presentation
         private void InitializeComponent()
         {
             this.lblNombre = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.PanelEditUsuario = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.txtActual = new System.Windows.Forms.TextBox();
@@ -53,9 +52,10 @@ namespace Presentation
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.PanelEditUsuario.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -68,19 +68,6 @@ namespace Presentation
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "SQLNombre";
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 125;
-            this.iconPictureBox1.Location = new System.Drawing.Point(12, 89);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(125, 125);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
             // 
             // PanelEditUsuario
             // 
@@ -99,9 +86,9 @@ namespace Presentation
             this.PanelEditUsuario.Controls.Add(this.label9);
             this.PanelEditUsuario.Controls.Add(this.txtNombre);
             this.PanelEditUsuario.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelEditUsuario.Location = new System.Drawing.Point(509, 0);
+            this.PanelEditUsuario.Location = new System.Drawing.Point(256, 0);
             this.PanelEditUsuario.Name = "PanelEditUsuario";
-            this.PanelEditUsuario.Size = new System.Drawing.Size(393, 481);
+            this.PanelEditUsuario.Size = new System.Drawing.Size(324, 317);
             this.PanelEditUsuario.TabIndex = 6;
             this.PanelEditUsuario.Visible = false;
             // 
@@ -110,7 +97,7 @@ namespace Presentation
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(109, 247);
+            this.button2.Location = new System.Drawing.Point(75, 247);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 30);
             this.button2.TabIndex = 24;
@@ -121,7 +108,7 @@ namespace Presentation
             // txtActual
             // 
             this.txtActual.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtActual.Location = new System.Drawing.Point(109, 212);
+            this.txtActual.Location = new System.Drawing.Point(75, 212);
             this.txtActual.Name = "txtActual";
             this.txtActual.Size = new System.Drawing.Size(146, 20);
             this.txtActual.TabIndex = 23;
@@ -131,7 +118,7 @@ namespace Presentation
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(193, 247);
+            this.button1.Location = new System.Drawing.Point(159, 247);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 30);
             this.button1.TabIndex = 13;
@@ -147,7 +134,7 @@ namespace Presentation
             this.linkLabel1.DisabledLinkColor = System.Drawing.SystemColors.Highlight;
             this.linkLabel1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.linkLabel1.LinkColor = System.Drawing.SystemColors.Highlight;
-            this.linkLabel1.Location = new System.Drawing.Point(261, 137);
+            this.linkLabel1.Location = new System.Drawing.Point(227, 137);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(91, 13);
             this.linkLabel1.TabIndex = 25;
@@ -160,7 +147,7 @@ namespace Presentation
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(107, 196);
+            this.label5.Location = new System.Drawing.Point(73, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 13);
             this.label5.TabIndex = 18;
@@ -171,7 +158,7 @@ namespace Presentation
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(106, 40);
+            this.label6.Location = new System.Drawing.Point(72, 40);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 14;
@@ -180,7 +167,7 @@ namespace Presentation
             // txtConfContraseña
             // 
             this.txtConfContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtConfContraseña.Location = new System.Drawing.Point(109, 173);
+            this.txtConfContraseña.Location = new System.Drawing.Point(75, 173);
             this.txtConfContraseña.Name = "txtConfContraseña";
             this.txtConfContraseña.Size = new System.Drawing.Size(146, 20);
             this.txtConfContraseña.TabIndex = 22;
@@ -190,7 +177,7 @@ namespace Presentation
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(107, 118);
+            this.label7.Location = new System.Drawing.Point(73, 118);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 16;
@@ -199,7 +186,7 @@ namespace Presentation
             // txtUsuario
             // 
             this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtUsuario.Location = new System.Drawing.Point(109, 95);
+            this.txtUsuario.Location = new System.Drawing.Point(75, 95);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(146, 20);
             this.txtUsuario.TabIndex = 20;
@@ -207,7 +194,7 @@ namespace Presentation
             // txtContraseña
             // 
             this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtContraseña.Location = new System.Drawing.Point(110, 134);
+            this.txtContraseña.Location = new System.Drawing.Point(76, 134);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(146, 20);
             this.txtContraseña.TabIndex = 21;
@@ -217,7 +204,7 @@ namespace Presentation
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(107, 79);
+            this.label8.Location = new System.Drawing.Point(73, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 15;
@@ -228,7 +215,7 @@ namespace Presentation
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(107, 157);
+            this.label9.Location = new System.Drawing.Point(73, 157);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 13);
             this.label9.TabIndex = 17;
@@ -237,7 +224,7 @@ namespace Presentation
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNombre.Location = new System.Drawing.Point(109, 56);
+            this.txtNombre.Location = new System.Drawing.Point(75, 56);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(146, 20);
             this.txtNombre.TabIndex = 19;
@@ -320,7 +307,7 @@ namespace Presentation
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(509, 481);
+            this.panel2.Size = new System.Drawing.Size(256, 317);
             this.panel2.TabIndex = 13;
             // 
             // linkLabel2
@@ -338,12 +325,25 @@ namespace Presentation
             this.linkLabel2.Text = "Editar Perfil";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 125;
+            this.iconPictureBox1.Location = new System.Drawing.Point(12, 89);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(125, 125);
+            this.iconPictureBox1.TabIndex = 0;
+            this.iconPictureBox1.TabStop = false;
+            // 
             // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(902, 481);
+            this.ClientSize = new System.Drawing.Size(580, 317);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -358,11 +358,11 @@ namespace Presentation
             this.Name = "FormUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Usuario";
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.PanelEditUsuario.ResumeLayout(false);
             this.PanelEditUsuario.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,7 +370,6 @@ namespace Presentation
 
         #endregion
         private System.Windows.Forms.Label lblNombre;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel PanelEditUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblUsuario;
@@ -393,5 +392,6 @@ namespace Presentation
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
