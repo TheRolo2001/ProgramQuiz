@@ -65,6 +65,69 @@ namespace Cuestionario
             this.Opcion4.Text = "Ninguna de las anteriores.";
             seleccion++;
         }
+        private void pregunta4()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
+        private void pregunta5()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
+        private void pregunta6()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
+        private void pregunta7()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
+        private void pregunta8()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
+        private void pregunta9()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
+        private void pregunta10()
+        {
+            this.Pregunta1.Text = "¿Que es un Objeto?";
+            this.Opcion1.Text = "Tener un bajo costo.";
+            this.Opcion2.Text = "Incluir una lista de estandares recomendados.";
+            this.Opcion3.Text = "Desarrollar una estructura modelo para empresa.";
+            this.Opcion4.Text = "Ninguna de las anteriores.";
+            seleccion++;
+        }
 
         private void Limpiar()
         {
@@ -110,22 +173,152 @@ namespace Cuestionario
                     pregunta3();
                     Limpiar();
                     break;
+                case 3:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta4();
+                    Limpiar();
+                    break;
+                case 4:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta5();
+                    Limpiar();
+                    break;
+                case 5:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta6();
+                    Limpiar();
+                    break;
+                case 6:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta7();
+                    Limpiar();
+                    break;
+                case 7:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta8();
+                    Limpiar();
+                    break;
+                case 8:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta9();
+                    Limpiar();
+                    break;
+                case 9:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+
+                    }
+                    pregunta10();
+                    Limpiar();
+                    break;
+                case 10:
+                    if (Opcion3.Checked == true)
+                    {
+                        puntaje = puntaje + 500;
+                        Puntaje.Text = puntaje.ToString();
+                        correctas = correctas + 1;
+                        LbCorrectas.Text = correctas.ToString();
+                    }
+                    else
+                    {
+                        incorrectas = incorrectas + 1;
+                        LbIncorrectas.Text = incorrectas.ToString();
+                    }
+                    if (puntaje >= 4500)
+                    {
+                        MessageBox.Show(puntaje.ToString()+" Puntos Obtenidos en esta prueba", "Puntaje Sobresaliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        MessageBox.Show(puntaje.ToString()+" Puntos Obtenidos en esta prueba", "Debes Atender Mas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Application.Exit();
+                    }
+                    break;
+                default:
+                    break;
             }
-        }
-
-        private void GroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void opcion3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

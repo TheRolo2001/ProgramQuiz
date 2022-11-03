@@ -96,12 +96,6 @@
     <Compile Include="Forms\FormCuestionario.designer.cs">
       <DependentUpon>FormCuestionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormEditUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormEditUsuario.designer.cs">
-      <DependentUpon>FormEditUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormMenuCuestionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,9 +142,6 @@
     </Compile>
     <EmbeddedResource Include="Forms\FormCuestionario.resx">
       <DependentUpon>FormCuestionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormEditUsuario.resx">
-      <DependentUpon>FormEditUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMenuCuestionarios.resx">
       <DependentUpon>FormMenuCuestionarios.cs</DependentUpon>
@@ -261,6 +252,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-cuestionario-evaluacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
