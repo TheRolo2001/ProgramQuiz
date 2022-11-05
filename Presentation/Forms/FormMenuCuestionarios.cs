@@ -24,6 +24,7 @@ namespace Presentation.Forms
         {
             Form form = new FormCuestionario();
             form.Show();
+            button1.Enabled = false;
         }
     }
 }
