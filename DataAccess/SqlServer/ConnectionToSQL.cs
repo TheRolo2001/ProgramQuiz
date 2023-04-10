@@ -13,7 +13,7 @@ namespace DataAccess
 
         public ConnectionToSQL()
         {
-            connectionString = "Server=TheRolito; DataBase = ProgramQuiz; integrated security = true";
+            connectionString = "Server=FELIPE; DataBase = ProgramQuiz; integrated security = true";
         }
         protected SqlConnection GetConnection()
         {
